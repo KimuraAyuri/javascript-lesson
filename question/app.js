@@ -59,35 +59,25 @@ user.sayHello= function() {
 user.sayHello();
 
 // Q8
-let calc = {};
+let calc = {
+    add: function (x, y) {
+        console.log(x + y);
+    },
+    subtract: function (x, y) {
+        console.log(x - y);
+    },
+    multiply: function (x, y) {
+        console.log(x * y);
+    },
+    divide: function (x, y) {
+        console.log(x / y);
+    }
+};
 
-function add(x, y) {
-    console.log(x + y);
-}
-calc[0] = 1;
-calc[1] = 6;
-add(calc[0], calc[1]);
-
-function subtract(x, y) {
-    console.log(x - y);
-}
-calc[0] = 11;
-calc[1] = 1;
-subtract(calc[0], calc[1]);
-
-function multiply(x, y) {
-    console.log(x * y);
-}
-calc[0] = 7;
-calc[1] = 7;
-multiply(calc[0], calc[1]);
-
-function divide(x, y) {
-    console.log(x / y);
-}
-calc[0] = 25;
-calc[1] = 5;
-divide(calc[0], calc[1]);
+calc.add(1, 6);
+calc.subtract(11, 1);
+calc.multiply(7, 7);
+calc.divide(25, 5);
 
 // Q9
 function remainder(x, y) {
